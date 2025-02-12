@@ -35,8 +35,10 @@ if confirmed.lower() != "y":
 # We begin by creating an instance of the Device class. It will
 # use a default value for the baud rate and log level. The C library
 # version and device port must be manually specified.
-firmwareVersion = input("Please enter the firmware version: ")
-port = input("Please enter the device port: ")
+# firmwareVersion = input("Please enter the firmware version: ")
+firmwareVersion = "7.2.0"
+# port = input("Please enter the device port: ")
+port = "/dev/ttyACM0"
 device = Device(port=port, firmwareVersion=firmwareVersion)
 
 
