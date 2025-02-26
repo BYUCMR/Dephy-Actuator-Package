@@ -38,7 +38,8 @@ if confirmed.lower() != "y":
 # firmwareVersion = input("Please enter the firmware version: ")
 firmwareVersion = "7.2.0"
 # port = input("Please enter the device port: ")
-device = Device(port="COM6", firmwareVersion="7.2.0")
+port = "/dev/ttyACM0"
+device = Device(port=port, firmwareVersion=firmwareVersion)
 
 
 # Once instantiated, we have to establish a connection between the
